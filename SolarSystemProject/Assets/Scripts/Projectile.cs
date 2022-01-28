@@ -43,6 +43,8 @@ public class Projectile : MonoBehaviour
         // calculate the distance from the main camera
         float dist = Vector3.Distance(Camera.main.transform.position, transform.position);
 
+        Debug.Log("Distance: " + dist);
+
         // if the distance is greater than the destroyDistance
         if (dist>destroyDistance)
         {
